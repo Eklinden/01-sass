@@ -1,0 +1,21 @@
+{
+  "name": "byggverktyg",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build-sass": "sass src\\style\\:dist\\",
+    "watch-sass": "nodemon --watch ./src/style/ --exec \"npm run build-css\"",
+    "copy-files": "cp src\\script.js src\\index.html dist\\",
+    "watch-html-js": "nodemon -- src/-e html,js --exec \"npm run cody-html-js\"",
+    "live": "cd dist && live-server"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "live-server": "^1.2.2",
+    "nodemon": "^2.0.19",
+    "sass": "^1.54.5"
+  }
+}
