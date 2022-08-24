@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build-sass": "sass src\\style\\:dist\\",
-    "watch-sass": "nodemon --watch ./src/style/ --exec \"npm run build-css\"",
+    "watch-sass": "nodemon --watch ./src/style/ -e scss --exec \"npm run build-sass\"",
     "copy-files": "cp src\\script.js src\\index.html dist\\",
     "watch-html-js": "nodemon -- src/-e html,js --exec \"npm run cody-html-js\"",
     "live": "cd dist && live-server"
