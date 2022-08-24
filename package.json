@@ -7,7 +7,7 @@
     "build-sass": "sass src\\style\\:dist\\",
     "watch-sass": "nodemon --watch ./src/style/ -e scss --exec \"npm run build-sass\"",
     "copy-files": "cp src\\script.js src\\index.html dist\\",
-    "watch-html-js": "nodemon -- src/-e html,js --exec \"npm run cody-html-js\"",
+    "watch-html-js": "nodemon --watch src/ -e html,js --exec \"npm run copy-files\"",
     "live": "cd dist && live-server"
   },
   "keywords": [],
